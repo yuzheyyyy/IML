@@ -47,3 +47,5 @@ for index,lam in enumerate(ridge_lambda):
     
 #save data
 np.savetxt("model_coefficient.csv",RMSE_coef,delimiter='\r\n')
+
+##

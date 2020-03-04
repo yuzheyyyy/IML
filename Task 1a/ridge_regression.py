@@ -30,4 +30,5 @@ for index,lam in enumerate(ridge_lambda):
         RMSE.append(rms)
     RMSE_lam[index]=np.mean(np.array(RMSE))
 
-print(RMSE_lam)
+#save data
+np.savetxt('RMSE.csv',RMSE_lam,delimiter='\r\n')
